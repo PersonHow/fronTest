@@ -199,3 +199,33 @@ nav {
         }
     }
 }
+
+@media screen and (min-width:1921px) {
+    .top {
+        // height: 137dvh;
+        width: 100%;
+    
+        .carousel{
+            .carousel-inner{
+                .carousel-item.ci01{
+                    img{
+                        width: 100%;
+                    }
+                }
+    
+                .carousel-item.ci02{
+                    img{
+    
+                        width: 100%;
+                    }
+                }
+    
+                .carousel-item.ci03{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

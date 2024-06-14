@@ -158,4 +158,18 @@ nav li:first-child {
   .down .cool {
     width: 100%;
   }
+}
+@media screen and (min-width: 1921px) {
+  .top {
+    width: 100%;
+  }
+  .top .carousel .carousel-inner .carousel-item.ci01 img {
+    width: 100%;
+  }
+  .top .carousel .carousel-inner .carousel-item.ci02 img {
+    width: 100%;
+  }
+  .top .carousel .carousel-inner .carousel-item.ci03 img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
