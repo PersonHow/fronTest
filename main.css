@@ -14,13 +14,13 @@ body {
   width: 100%;
 }
 .top .carousel .carousel-inner .carousel-item.ci01 img {
-  max-width: 100%;
+  max-width: 100dvw;
 }
 .top .carousel .carousel-inner .carousel-item.ci02 img {
-  max-width: 100%;
+  max-width: 100dvw;
 }
 .top .carousel .carousel-inner .carousel-item.ci03 img {
-  max-width: 100%;
+  max-width: 100dvw;
 }
 
 nav {
