@@ -11,8 +11,16 @@ body {
 }
 
 .top {
-  height: 137dvh;
   width: 100%;
+}
+.top .carousel .carousel-inner .carousel-item.ci01 img {
+  max-width: 100%;
+}
+.top .carousel .carousel-inner .carousel-item.ci02 img {
+  max-width: 100%;
+}
+.top .carousel .carousel-inner .carousel-item.ci03 img {
+  max-width: 100%;
 }
 
 nav {
@@ -126,7 +134,7 @@ nav li:first-child {
   color: rgb(116, 116, 116);
 }
 
-@media screen and (min-width: 300px) and (max-width: 430px) {
+@media screen and (max-width: 850px) {
   .hideOnMobile {
     display: none;
   }
@@ -134,6 +142,20 @@ nav li:first-child {
     display: block;
   }
   .sidebar {
+    width: 100%;
+  }
+  .down {
+    flex-direction: column;
+  }
+  .down .cool {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .down {
+    flex-direction: column;
+  }
+  .down .cool {
     width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
