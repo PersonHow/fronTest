@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.top {
+    height: 137dvh;
+    width: 100%;
+
+}
+
+nav {
+    background: rgb(255,255,255,0.9);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+
+    ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    li {
+        height: 30px;
+        padding-top: 5px;
+
+        img {
+            width: 300px;
+            display: block;
+        }
+    }
+
+    a {
+        height: 100%;
+        padding: 0 30px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: black;
+    }
+
+    li:first-child {
+        margin-right: auto;
+    }
+}
+
+.sidebar {
+    position: fixed;
+    height: 100dvh;
+    width: 250px;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgb(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    a,
+    li {
+        width: 100%;
+    }
+}
+
+.menu-button {
+    display: none;
+}
+
+.down{
+    width: 100%;
+    height: 50dvh;
+    display: flex;
+    justify-content: center;
+    .left{
+        width: 50%;
+        height: 100%;
+        background-image: url("./Pagani04.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .right{
+        width: 50%;
+        height: 100%;
+        background-image: url("./pagani05.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .cool{
+        transition: .5s linear ;
+        .showText{
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        &:hover{
+            .showText{
+                font-size: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(0,0,0,0.5);
+                color:white;
+
+
+                a{
+                    width: 50px;
+                    height: 50px;
+                    color: white;
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &:hover{
+                        color:rgb(116, 116, 116);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width:300px) and (max-width:430px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
